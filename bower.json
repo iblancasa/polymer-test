@@ -1,0 +1,21 @@
+{
+  "name": "polymer-test-codelab",
+  "description": "I' a test",
+  "main": "null",
+  "authors": [
+    "Oscar Caballero <oscarcpozas@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.3.1"
+  }
+}
