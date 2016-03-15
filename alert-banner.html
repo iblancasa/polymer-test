@@ -1,16 +1,20 @@
 <link rel="import" href="./bower_components/polymer/polymer.html">
 <dom-module id="alert-banner">
   <template>
-    <style>
-    .alert { background: blue; color: white; }
-    </style>
-    <div class="alert">
-      Hey user! Something awesome happened!
+    <div class="alert" hidden="{{!shown}}">
+      <content select=".message"></content>
     </div>
   </template>
   <script>
     Polymer({
-      is: 'alert-banner'
+      is: 'alert-banner',
+      properties: {
+        shown: {
+          type: Boolean,
+          value: false,
+          notify: true
+        }
+      }
     });
   </script>
 </dom-module>
